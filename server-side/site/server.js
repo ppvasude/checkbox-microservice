@@ -1,6 +1,6 @@
 var express = require('express'),
         cors = require('cors'),
-	marqdown = require('./marqdown.js'),
+	marqdown = require('./marqdown.js');
 	//routes = require('./routes/designer.js'),
 	//votes = require('./routes/live.js'),
 	//upload = require('./routes/upload.js'),
