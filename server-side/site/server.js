@@ -31,7 +31,7 @@ app.post('/api/design/survey',
 		console.log(req.body.markdown);
 		//var text = marqdown.render( req.query.markdown );
 		var text = marqdown.render( req.body.markdown );
-		res.send('<h1>Hi from Service</h1>');
+		res.send( {preview: text} );
 	}
 );
 
