@@ -31,6 +31,7 @@ app.post('/api/design/survey',
 		console.log(req.body.markdown);
 		//var text = marqdown.render( req.query.markdown );
 		var text = marqdown.render( req.body.markdown );
+		res.setHeader('Access-Control-Allow-Origin','*');
 		res.send( {preview: text} );
 	}
 );
