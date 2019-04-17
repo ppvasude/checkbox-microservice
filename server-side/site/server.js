@@ -28,10 +28,11 @@ app.options('/api/study/vote/submit/', cors(corsOptions));
 app.post('/api/design/survey', 
 	function(req,res)
 	{
+		console.log("INSIDE THE MICROSERVICE:: "+req);
 		console.log(req.body.markdown);
 		//var text = marqdown.render( req.query.markdown );
 		var text = marqdown.render( req.body.markdown );
-		res.setHeader('Access-Control-Allow-Origin','*');
+		//res.setHeader('Access-Control-Allow-Origin','*');
 		res.send( {preview: text} );
 	}
 );
